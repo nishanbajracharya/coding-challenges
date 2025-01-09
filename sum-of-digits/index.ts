@@ -1,16 +1,16 @@
 function sumOfDigits(num: number) {
-    const absNum = Math.abs(num);
+  const absNum = Math.abs(num);
 
-    const absString = `${absNum}`.split('');
+  const absString = `${absNum}`.split('');
 
-    let sum = 0;
-    for (let i = 0; i < absString.length; i++) {
-        if (absString[i] === '.') return sum;
+  let sum = 0;
+  for (let i = 0; i < absString.length; i++) {
+    if (absString[i] === '.') return sum;
 
-        const val = Number(absString[i]);
+    const val = Number(absString[i]);
 
-        sum += val;
-    }
+    sum += val;
+  }
 
-    return sum;
+  return sum;
 }
